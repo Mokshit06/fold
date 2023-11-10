@@ -23,10 +23,6 @@ export default defineConfig({
           label: 'Reference',
           autogenerate: { directory: 'examples' },
         },
-        {
-          label: 'History',
-          link: 'history',
-        },
       ],
     }),
   ],
