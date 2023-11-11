@@ -1,3 +1,4 @@
+// @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
@@ -5,6 +6,7 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
   integrations: [
     starlight({
+      customCss: ['./src/styles.css'],
       title: 'FOLD',
       social: {
         github: 'https://github.com/edemaine/fold',
