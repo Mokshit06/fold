@@ -13,7 +13,7 @@ They include:
 
 - `file_spec`: The version of the FOLD spec that the file assumes
   (a number). See the top of this spec for the current value,
-  and [history](history.md) for differences between versions.
+  and [history](/spec/history) for differences between versions.
   **Strongly recommended**, in case we ever have to make
   backward-incompatible changes.
 - `file_creator`: The software that created the file (a string).
@@ -32,9 +32,9 @@ They include:
   - `"diagrams"`: A sequence of frames representing folding steps,
     as in origami diagrams
   - Custom classes should have a colon in them;
-    see [Custom Properties](#custom-properties) below.
+    see [Custom Properties](/spec/information#custom-properties) below.
 - `file_frames`: Array of frame dictionaries.
-  See [Multiple Frames](#multiple-frames) below.
+  See [Multiple Frames](/spec/information#multiple-frames) below.
 
 ## Frame Metadata (`frame_...`)
 

@@ -120,7 +120,7 @@ but is used to define the ordering of `edges_faces`.)
       Join edges are also appropriate for triangulation edges used in
       simulation but which are not meaningful otherwise.
       If you use join edges, we recommend including
-      `"joins"` in [`frame_attributes`](#frame-metadata-frame_).
+      `"joins"` in [`frame_attributes`](/spec/metadata#frame-metadata-frame_).
       _Added in version 1.2._
   - **Boundary edges**
     - A boundary edge (`"B"`) has only one incident face.
@@ -137,7 +137,7 @@ but is used to define the ordering of `edges_faces`.)
       Implement only for applications where it is useful,
       limited to locally nonoverlapping, locally manifold surfaces.
       If you use cut edges, we recommend including
-      `"cuts"` in [`frame_attributes`](#frame-metadata-frame_).
+      `"cuts"` in [`frame_attributes`](/spec/metadata#frame-metadata-frame_).
       _Added in version 1.2._
 
 - `edges_foldAngle`: For each edge, the fold angle (deviation from flatness)
@@ -192,7 +192,7 @@ they overlap in a single connected region. For example, this property
 is guaranteed by convex faces. If your faces overlap in multiple regions,
 you should subdivide them (via `"J"` join edges) so that they do not.
 We recommend specifying either `"convexFaces"` or `"nonConvexFaces"`
-in [`frame_attributes`](#frame-metadata-frame_).
+in [`frame_attributes`](/spec/metadata#frame-metadata-frame_).
 
 - `faceOrders`: An array of triples `[f, g, s]` where `f` and `g` are face IDs
   and `s` is an integer between &minus;1 and 1:
@@ -279,7 +279,7 @@ future versions of the FOLD specification. If you think your custom
 property would be broadly useful, feel free to send us your use cases
 for consideration.)
 
-Similarly, custom [classes and attributes](#frame-metadata-frame_)
+Similarly, custom [classes and attributes](/spec/metadata#frame-metadata-frame_)
 can be specified by prefixing them with a namespace and a colon.
 For example, TreeMaker will use the frame class `"tm:tree"` to denote
 that the frame stores the metric tree of the uniaxial base.

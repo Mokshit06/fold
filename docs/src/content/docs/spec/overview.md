@@ -7,7 +7,7 @@ sidebar:
 
 This specification is still considered a rough draft, with everything subject
 to change. But we will increment version numbers when breaking changes or
-major new features are added. See the [history of past versions](history.md).
+major new features are added. See the [history of past versions](/spec/history).
 
 ## Design
 
