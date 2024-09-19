@@ -1,0 +1,32 @@
+---
+title: <span>F</span>lexible <span>O</span>rigami <span>L</span>ist <span>D</span>atastructure
+description: 'File format for describing origami models: crease patterns, mountain-valley patterns, folded states, etc.'
+template: splash
+hero:
+  tagline: 'File format for describing origami models: crease patterns, mountain-valley patterns, folded states, etc.'
+  actions:
+    - text: Get Started
+      link: /guides/what-is-fold
+      icon: right-arrow
+      variant: primary
+    - text: Go to Fold Viewer
+      link: https://starlight.astro.build
+      icon: external
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+	<Card title="JSON Compatible" icon="document">
+		Ensures easy parsing in different programming languages for seamless integration.
+	</Card>
+	<Card title="Handles Overlapping Faces" icon="bars">
+		Disambiguate overlapping faces with topological stacking order of faces that overlap geometrically
+	</Card>
+	<Card title="Edge Properties" icon="setting">
+		Ability to define edges, edge properties and thus arbitrary polyhedral complexes
+	</Card>
+	<Card title="Supports Linkages" icon="random">
+		Supports storing of linkages as well, with 1D edges but no 2D faces
+	</Card>
+</CardGrid>
